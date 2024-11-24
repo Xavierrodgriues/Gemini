@@ -23,7 +23,8 @@ const RecipeApp = () => {
 
     try {
       setLoading(true);
-      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
+      const api = import.meta.env.VITE_API_KEY;
+      const genAI = new GoogleGenerativeAI(api);
 
       const schema = {
         description: "List of recipes based on leftover food items",
