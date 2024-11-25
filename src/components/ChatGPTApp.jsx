@@ -109,7 +109,7 @@ const RecipeApp = () => {
         <input
           type="text"
           style={styles.input}
-          placeholder="Type your leftover food items..."
+          placeholder="Type your leftover food items like: banana , egg etc"
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && !loading && fetchResponse()}
